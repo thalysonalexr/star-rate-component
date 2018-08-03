@@ -1,0 +1,46 @@
+{
+  "name": "star-rate-component",
+  "version": "1.0.0",
+  "description": "A very simple component for star rating in Vue.js ",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thalysonrodrigues/star-rate-component.git"
+  },
+  "keywords": [
+    "Star Rate",
+    "Component Rate",
+    "VueJS Star",
+    "Star Rating Vue",
+    "Vue Star",
+    "Components in Vue"
+  ],
+  "author": "Thalyson Alexandre Rodrigues de Sousa",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "sass-loader": "^7.1.0",
+    "vue-loader": "^14.2.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "bugs": {
+    "url": "https://github.com/thalysonrodrigues/star-rate-component/issues"
+  },
+  "homepage": "https://github.com/thalysonrodrigues/star-rate-component#readme"
+}
