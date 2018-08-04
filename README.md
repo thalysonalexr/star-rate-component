@@ -9,7 +9,7 @@
     </a>
 </p>
 
-A simple component for VueJS. **Star Rate Component** is a component for [**VueJS**](https://vuejs.org/) for evaluating items through stars with or without punctuation. A customizable component in a simple and intuitive way with a sophisticated and good design.
+> A simple component for VueJS. **Star Rate Component** is a component for [**VueJS**](https://vuejs.org/) for evaluating items through stars with or without punctuation. A customizable component in a simple and intuitive way with a sophisticated and good design.
 
 ## Installation
 
@@ -33,7 +33,25 @@ $ npm install --save star-rate-component@latest
 
 ## Get Started
 
+> **Note:** In your App.vue import
 
+```vue
+<template>
+  <v-star-rate></v-star-rate>
+</template>
+
+<script>
+import StarRate from 'star-rate-component'
+
+export default {
+  name: 'App',
+  components: {
+    // name of component star rate
+    'v-star-rate': StarRate
+  }
+}
+</script>
+```
 
 ## Credits
 
