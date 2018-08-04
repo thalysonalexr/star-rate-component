@@ -1,6 +1,6 @@
 {
   "name": "star-rate-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A very simple component for star rating in Vue.js ",
   "main": "src/main.js",
   "scripts": {
