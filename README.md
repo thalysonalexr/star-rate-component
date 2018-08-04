@@ -54,6 +54,7 @@ export default {
 }
 </script>
 ```
+<img width="150" src="./docs/gif/basic-usage.gif" alt="Basic usage" title="Basic Usage">
 
 ### Get value of rating
 
@@ -71,8 +72,6 @@ export default {
 </script>
 ...
 ```
-
-<img width="150" src="./docs/gif/basic-usage.gif" alt="Basic usage" title="Basic Usage">
 
 ## Credits
 
