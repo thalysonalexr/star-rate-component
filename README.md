@@ -77,7 +77,7 @@ export default {
 
 > In propertie **size**
 
-```
+```vue
 <template>
   <v-star-rate ref="component1" size="sm"></v-star-rate>
   <v-star-rate ref="component2" size="md"></v-star-rate>
