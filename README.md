@@ -39,7 +39,7 @@ $ npm install --save star-rate-component@latest
 
 ```vue
 <template>
-  <v-star-rate></v-star-rate>
+  <v-star-rate ref="component"></v-star-rate>
 </template>
 
 <script>
@@ -55,7 +55,24 @@ export default {
 </script>
 ```
 
-<img width="200" src="./docs/gif/basic-usage.gif" alt="Basic usage" title="Basic Usage">
+### Get value of rating
+
+> Get a value of component by **$refs** in propertie "note"
+
+```vue
+<script>
+(...)
+export default {
+  (...)
+  methods: {
+    show () { console.log(this.$refs.note4.note) }
+  }
+}
+</script>
+...
+```
+
+<img width="150" src="./docs/gif/basic-usage.gif" alt="Basic usage" title="Basic Usage">
 
 ## Credits
 
