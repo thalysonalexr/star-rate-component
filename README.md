@@ -33,6 +33,8 @@ $ npm install --save star-rate-component@latest
 
 ## Get Started
 
+### Basic usage
+
 > **Note:** In your App.vue import
 
 ```vue
@@ -52,6 +54,8 @@ export default {
 }
 </script>
 ```
+
+<img src="./docs/gif/basic-usage.gif" alt="Basic usage" title="Basic Usage">
 
 ## Credits
 
