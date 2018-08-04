@@ -58,7 +58,7 @@ export default {
 
 ### Get value of rating
 
-> Get a value of component by **$refs** in propertie "note"
+> Get a value of component by **$refs** in value: "note"
 
 ```vue
 <script>
@@ -72,6 +72,20 @@ export default {
 </script>
 ...
 ```
+
+### Set the size of the component
+
+> In propertie **size**
+
+```
+<template>
+  <v-star-rate ref="component1" size="sm"></v-star-rate>
+  <v-star-rate ref="component2" size="md"></v-star-rate>
+  <v-star-rate ref="component3" size="lg"></v-star-rate>
+</template>
+```
+
+<img width="150" src="./docs/gif/size.gif" alt="Size of component" title="Size of component">
 
 ## Credits
 
