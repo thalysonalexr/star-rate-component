@@ -55,7 +55,7 @@ export default {
 </script>
 ```
 
-<img width="200" src="./docs/gif/basic-usage.gif" alt="Basic usage" title="Basic Usage">
+<img width="150" src="./docs/gif/basic-usage.gif" alt="Basic usage" title="Basic Usage">
 
 ## Credits
 
