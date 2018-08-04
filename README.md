@@ -85,7 +85,7 @@ export default {
 </template>
 ```
 
-<img width="150" src="./docs/gif/size.gif" alt="Size of component" title="Size of component">
+<img src="./docs/gif/size.gif" alt="Size of component" title="Size of component">
 
 ## Credits
 
