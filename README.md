@@ -66,7 +66,7 @@ export default {
 export default {
   (...)
   methods: {
-    show () { console.log(this.$refs.note4.note) }
+    show () { console.log(this.$refs.component.note) }
   }
 }
 </script>
