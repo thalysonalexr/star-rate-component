@@ -82,15 +82,17 @@ export default {
 
 ```vue
 <template>
-  <v-star-rate ref="component1" size="sm"></v-star-rate>
-  <v-star-rate ref="component2" size="md"></v-star-rate>
-  <v-star-rate ref="component3" size="lg"></v-star-rate>
+  <div>
+    <v-star-rate ref="component1" size="sm"></v-star-rate>
+    <v-star-rate ref="component2" size="md"></v-star-rate>
+    <v-star-rate ref="component3" size="lg"></v-star-rate>
+  </div>
 </template>
 ```
 
 <img src="./docs/gif/size.gif" alt="Size of component" title="Size of component">
 
-## Properties off component
+## Properties
 
 Property | Type | Possible values | Description | Remarks |
 ---------|------|-----------------|-------------|---------|
