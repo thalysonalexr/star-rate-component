@@ -16,7 +16,7 @@
 
 ### Download (Zip)
 
-Download this [link](https://github.com/thalysonrodrigues/star-rate-component/archive/v1.0.0.zip).
+Download this [link](https://github.com/thalysonrodrigues/star-rate-component/archive/v1.0.1.zip).
 
 ### Build
 
