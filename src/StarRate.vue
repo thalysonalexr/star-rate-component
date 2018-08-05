@@ -1,31 +1,31 @@
 <template>
-  <div id="evaluate-component" :class="'wrapper ' + size">
+  <div id="evaluate-component" :class="'wrapper ' + size" :style="'background-color: ' + colorBox">
     <div :class="'box-' + display">
-      <h1 class="title" :title="titleBox">
+      <h1 class="title" :title="titleBox" :style="'color: ' + colorText">
         {{ titleBox }}
       </h1>
     </div>
     <div :class="'box-' + display">
-      <h2 class="note">
+      <h2 class="note" :style="'color: ' + colorText">
         {{ note }}
       </h2>
     </div>
     <div class="align-bottom">
       <div class="flex-box">
         <button @click="selectStar(5)" data-rate="5" class="star-box" :title="labels.perfect">
-          <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+          <svg :style="'fill: ' + defaultColorStar" class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
         </button>
         <button @click="selectStar(4)" data-rate="4" class="star-box" :title="labels.great">
-          <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+          <svg :style="'fill: ' + defaultColorStar" class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
         </button>
         <button @click="selectStar(3)" data-rate="3" class="star-box" :title="labels.good">
-          <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+          <svg :style="'fill: ' + defaultColorStar" class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
         </button>
         <button @click="selectStar(2)" data-rate="2" class="star-box" :title="labels.bad">
-          <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+          <svg :style="'fill: ' + defaultColorStar" class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
         </button>
         <button @click="selectStar(1)" data-rate="1" v-on:dblclick="noRate()" class="star-box" :title="labels.terrible">
-          <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+          <svg :style="'fill: ' + defaultColorStar" class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
         </button>
       </div>
     </div>
@@ -36,22 +36,37 @@
 export default {
   name: 'Evaluate',
   props: {
-    // color of star: rgb, rgba, hexadecimal
-    starColor: {
+    // color of text in container: rgb, rgba, hexadecimal
+    colorText: {
       type: String,
       required: false,
-      default: 'red'
+      default: ''
     },
+    // color star deselected: rgb, rgba, hexadecimal
+    defaultColorStar: {
+      type: String,
+      required: false,
+      default: '#dbdbdb'
+    },
+    // color star selected: rgb, rgba, hexadecimal
+    colorStar: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    // border in container box
     borders: {
       type: Boolean,
       required: false,
       default: true
     },
+    // flashing animation in stars
     shine: {
       type: Boolean,
       required: false,
       default: false
     },
+    // type of display: simple, normal, full
     display: {
       type: String,
       required: false,
@@ -65,10 +80,13 @@ export default {
       type: String,
       required: false
     },
-    // notes for static component view
+    // notes for static component result view
     result: {
       type: Array,
-      required: false
+      required: false,
+      validator: function (arr) {
+        return !arr.map((x) => !isNaN(parseFloat(x)) && isFinite(x)).includes(false)
+      }
     },
     // size in container evaluate
     size: {
@@ -93,7 +111,7 @@ export default {
         }
       },
       validator: function (object) {
-        return 'terrible' in object && 'bad' in object && 'good' in object && 'great' in object && 'perfect' in object
+        return !['terrible', 'bad', 'good', 'great', 'perfect'].map((x) => x in object).includes(false)
       }
     }
   },
@@ -104,14 +122,27 @@ export default {
   },
   methods: {
     selectStar (value) {
+      let elements = this.$el.querySelectorAll('.flex-box > .star-box:hover .star, .flex-box > .star-box:hover ~ .star-box .star')
       // set animation
       $(this.$el.querySelectorAll('.star')).removeClass('star-color-selected')
-      $(this.$el.querySelectorAll('.flex-box > .star-box:hover .star, .flex-box > .star-box:hover ~ .star-box .star')).addClass('star-color-selected')
+      $(elements).addClass('star-color-selected')
+
+      if (this.$props.shine) {
+        this.setShineAnimation(elements)
+      }
       // set value for note
       this.note = value
     },
-    noRate () {
+    setShineAnimation (elements) {
+      this.disableShineAnimation()
+      $(elements).addClass('shine')
+    },
+    disableShineAnimation () {
+      $(this.$el.querySelectorAll('.star')).removeClass('shine')
       $(this.$el.querySelectorAll('.star')).removeClass('star-color-selected')
+    },
+    noRate () {
+      this.disableShineAnimation()
       this.note = 0
     },
     // exception for invalid argument
@@ -121,22 +152,25 @@ export default {
     },
     selectStarByData (note) {
       // select elements
-      $(this.$el.querySelectorAll(`.star-box[data-rate="${note}"] .star, .star-box[data-rate="${note}"] ~ .star-box .star`)).addClass('star-color-selected')
+      let elements = this.$el.querySelectorAll(`.star-box[data-rate="${note}"] .star, .star-box[data-rate="${note}"] ~ .star-box .star`)
+
+      if (this.$props.shine) {
+        this.setShineAnimation(elements)
+      }
+
+      $(elements).addClass('star-color-selected')
     },
     disableStar () {
       // disable buttons
       $(this.$el.querySelectorAll('.star-box')).attr('disabled', true)
     },
     isValid (value) {
-      const invalid = (n) => n < 0 || n > 5
-
-      if (value.map(invalid).includes(true)) {
+      if (value.map((n) => n < 0 || n > 5).includes(true)) {
         throw new this.InvalidNoteException('Assessment grades should be between 0 and 5')
       }
     },
     average (value) {
-      const sum = (x, y) => x + y
-      return (value.reduce(sum) / value.length).toFixed(1)
+      return (value.reduce((x, y) => x + y) / value.length).toFixed(1)
     },
     calc () {
       if (this.$props.result !== undefined) {
@@ -225,8 +259,6 @@ export default {
 
 .title, .note{
   font-family: sans-serif;
-  font-smoothing: antialiased;
-  font-smoothing: grayscale;
   color: #2c3e50;
   text-align: center;
   margin-bottom: 20%;
@@ -258,6 +290,9 @@ export default {
   fill: #fff83f!important;
   transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
+}
+
+.shine{
   animation: shine 300ms infinite;
   -webkit-animation: shine 300ms infinite;
 }

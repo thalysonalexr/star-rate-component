@@ -1,6 +1,7 @@
 # Star Rate Component
 
 [![npm version](https://badge.fury.io/js/star-rate-component.svg)](https://badge.fury.io/js/star-rate-component)
+[![GitHub version](https://badge.fury.io/gh/thalysonrodrigues%2Fstar-rate-component.svg)](https://badge.fury.io/gh/thalysonrodrigues%2Fstar-rate-component)
 [![Software License](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/thalysonrodrigues/star-rate-component/blob/master/LICENSE)
 
 <p align="center">
@@ -26,6 +27,8 @@ $ git clone https://github.com/thalysonrodrigues/star-rate-component.git
 ```
 
 ### NPM
+
+Install the latest version by **npm**
 
 ```
 $ npm install --save star-rate-component@latest
@@ -54,11 +57,11 @@ export default {
 }
 </script>
 ```
-<img width="150" src="./docs/gif/basic-usage.gif" alt="Basic usage" title="Basic Usage">
+<img src="./docs/gif/basic-usage.gif" alt="Basic usage" title="Basic Usage">
 
 ### Get value of rating
 
-> Get a value of component by **$refs** in value: "note"
+> Get a value of component by **$refs** in data: "note"
 
 ```vue
 <script>
@@ -75,7 +78,7 @@ export default {
 
 ### Set the size of the component
 
-> In propertie **size**
+> In property **size**
 
 ```vue
 <template>
@@ -86,6 +89,21 @@ export default {
 ```
 
 <img src="./docs/gif/size.gif" alt="Size of component" title="Size of component">
+
+## Properties off component
+
+Property | Type | Possible values | Description | Remarks |
+---------|------|-----------------|-------------|---------|
+```color-box```| String | colors in rgb, rgba or hexadecimal | Color for container box in component | No required, default: ```#fcfcfc``` |
+```color-text```| String | colors in rgb, rgba or hexadecimal | Color of pontuation and title | No required |
+```default-color-star```| String | colors in rgb, rgba or hexadecimal | Color of star deselected | No required, default: ```#dbdbdb``` |
+```borders```| Boolean | ```true``` or ```false``` | Border in container of component (box) | No required, default: ```true``` |
+```shine```| Boolean | ```true``` or ```false``` | Flashing stars animation | No required, default: ```false``` |
+```display```| String | ```simple```, ```normal``` or ```full``` | Simple container without punctuation and without title. Normal container with punctuation. Container full with punctuation and title | No required, default: ```full``` |
+```title-box```| String | Anywhere value | Title in container box component | No required |
+```result```| Array | Values type number | An array with number-type values ​​of each star-rate-component component for generating an average in this result container | No required |
+```size```| String | ```sm```, ```md``` or ```lg``` | Component container size | No required, default: ```md``` |
+```labels```| Object | Anywhere value in keys object | Title labels of each star in the assessment | No required, default: ```{terrible: 'terrible', bad: 'bad', good: 'good', great: 'great', perfect: 'perfect'}``` |
 
 ## Credits
 
