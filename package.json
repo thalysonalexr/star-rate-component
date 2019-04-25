@@ -22,7 +22,7 @@
   "author": "Thalyson Alexandre Rodrigues de Sousa",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": ">=3.4.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
