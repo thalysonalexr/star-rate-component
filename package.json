@@ -1,6 +1,6 @@
 {
   "name": "star-rate-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A very simple component for star rating in Vue.js ",
   "main": "src/main.js",
   "scripts": {
@@ -22,7 +22,6 @@
   "author": "Thalyson Alexandre Rodrigues de Sousa",
   "license": "MIT",
   "dependencies": {
-    "jquery": ">=3.4.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {

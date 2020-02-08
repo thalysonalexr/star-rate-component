@@ -101,7 +101,7 @@ Property | Type | Possible values | Description | Remarks |
 ```default-color-star```| String | colors in rgb, rgba or hexadecimal | Color of star deselected | No required, default: ```#dbdbdb``` |
 ```borders```| Boolean | ```true``` or ```false``` | Border in container of component (box) | No required, default: ```true``` |
 ```shine```| Boolean | ```true``` or ```false``` | Flashing stars animation | No required, default: ```false``` |
-```display```| String | ```simple```, ```normal``` or ```full``` | Simple container without punctuation and without title. Normal container with punctuation. Container full with punctuation and title | No required, default: ```full``` |
+```display```| String | ```simple``` or ```normal```| Simple container without punctuation and without title. Normal container with punctuation. Container full with punctuation and title | No required, default: ```full``` |
 ```title-box```| String | Anywhere value | Title in container box component | No required |
 ```result```| Array | Values type number | An array with number-type values ​​of each star-rate-component component for generating an average in this result container | No required |
 ```size```| String | ```sm```, ```md``` or ```lg``` | Component container size | No required, default: ```md``` |
@@ -113,4 +113,4 @@ Property | Type | Possible values | Description | Remarks |
 
 ## License 
 
-[MIT License](https://github.com/thalysonrodrigues/star-rate-component/blob/master/LICENSE) © 2018 Thalyson Rodrigues
+[MIT License](https://github.com/thalysonrodrigues/star-rate-component/blob/master/LICENSE) © 2018 - 2020 Made with ♥ by Thalyson Rodrigues
