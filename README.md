@@ -1,8 +1,8 @@
 # Star Rate Component
 
-[![npm version](https://badge.fury.io/js/star-rate-component.svg)](https://badge.fury.io/js/star-rate-component)
-[![GitHub version](https://badge.fury.io/gh/thalysonalexr%2Fstar-rate-component.svg)](https://badge.fury.io/gh/thalysonalexr%2Fstar-rate-component)
-[![Software License](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/thalysonalexr/star-rate-component/blob/master/LICENSE)
+[![NPM version](https://img.shields.io/npm/v/star-rate-component?style=flat-square)](https://www.npmjs.com/package/star-rate-component)
+[![GitHub version](https://img.shields.io/github/v/release/thalysonalexr/star-rate-component?style=flat-square)](https://github.com/thalysonalexr/star-rate-component/tags)
+[![Software License](https://img.shields.io/github/license/thalysonalexr/star-rate-component?color=blue&style=flat-square)](https://github.com/thalysonalexr/star-rate-component/blob/master/LICENSE)
 
 <p align="center">
     <a href="https://github.com/thalysonalexr/star-rate-component">
