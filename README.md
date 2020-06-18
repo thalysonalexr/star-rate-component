@@ -1,11 +1,11 @@
 # Star Rate Component
 
 [![npm version](https://badge.fury.io/js/star-rate-component.svg)](https://badge.fury.io/js/star-rate-component)
-[![GitHub version](https://badge.fury.io/gh/thalysonrodrigues%2Fstar-rate-component.svg)](https://badge.fury.io/gh/thalysonrodrigues%2Fstar-rate-component)
-[![Software License](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/thalysonrodrigues/star-rate-component/blob/master/LICENSE)
+[![GitHub version](https://badge.fury.io/gh/thalysonalexr%2Fstar-rate-component.svg)](https://badge.fury.io/gh/thalysonalexr%2Fstar-rate-component)
+[![Software License](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/thalysonalexr/star-rate-component/blob/master/LICENSE)
 
 <p align="center">
-    <a href="https://github.com/thalysonrodrigues/star-rate-component">
+    <a href="https://github.com/thalysonalexr/star-rate-component">
         <img src="./docs/star-rate.png" alt="Star Rate Component" title="Star Rate Component">
     </a>
 </p>
@@ -16,14 +16,14 @@
 
 ### Download (Zip)
 
-Download this [link](https://github.com/thalysonrodrigues/star-rate-component/archive/v1.0.1.zip).
+Download this [link](https://github.com/thalysonalexr/star-rate-component/archive/v1.0.1.zip).
 
 ### Build
 
 Clone this repository
 
 ```
-$ git clone https://github.com/thalysonrodrigues/star-rate-component.git
+$ git clone https://github.com/thalysonalexr/star-rate-component.git
 ```
 
 ### NPM
@@ -42,7 +42,7 @@ $ npm install --save star-rate-component@latest
 
 ```vue
 <template>
-  <v-star-rate ref="component"></v-star-rate>
+  <v-star-rate ref="component" />
 </template>
 
 <script>
@@ -83,9 +83,9 @@ export default {
 ```vue
 <template>
   <div>
-    <v-star-rate ref="component1" size="sm"></v-star-rate>
-    <v-star-rate ref="component2" size="md"></v-star-rate>
-    <v-star-rate ref="component3" size="lg"></v-star-rate>
+    <v-star-rate ref="component1" size="sm" />
+    <v-star-rate ref="component2" size="md" />
+    <v-star-rate ref="component3" size="lg" />
   </div>
 </template>
 ```
@@ -109,8 +109,8 @@ Property | Type | Possible values | Description | Remarks |
 
 ## Credits
 
-- [Thalyson Alexandre Rodrigues de Sousa](https://github.com/thalysonrodrigues)
+- [Thalyson Alexandre Rodrigues de Sousa](https://github.com/thalysonalexr)
 
 ## License 
 
-[MIT License](https://github.com/thalysonrodrigues/star-rate-component/blob/master/LICENSE) © 2018 - 2020 Made with ♥ by Thalyson Rodrigues
+[MIT License](https://github.com/thalysonalexr/star-rate-component/blob/master/LICENSE) © 2018 - 2020 Made with ♥ by Thalyson Rodrigues
